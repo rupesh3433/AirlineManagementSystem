@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #000000;
+  color: #fff;
+  position: fixed;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0px 0px 1px 1px rgb(255, 255, 255);
+}
+.logo{
+  display: flex;
+}
+.logo h1{
+  font-size: 20px; 
+}
+.logo .name{
+  position: relative;
+  left: -17px;
+  font-family:cursive;
+  color: rgb(127, 214, 255);
+}
+
+.navbar img {
+  width: 70px; /* Set the appropriate width for your logo */
+  height: 50px;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: #33e4ff; /* Orange */
+  /* font-size:18px; */
+  border: 2px solid rgb(0, 255, 255);
+  padding: 10px;
+  margin: 0px;
+}
+.nav_search{
+  margin-right: 25px;
+}
+.search-box {
+  flex: 1;
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-button {
+  background-color: rgb(2, 101, 188); /* Orange */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-button:hover{
+  background: rgb(4, 161, 213);
+  color: #000000;
+}
+
+/* First Division Styles */
+.first-division {
+  margin-top: 73px;
+  height: 50vh;
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Animated Card Styles */
+.animated-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0px 20px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.animated-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+.animated-card:hover img {
+  transform: scale(1.1);
+}
+
+.animated-card .content {
+  position: absolute;
+  height: 45%;
+  bottom: 0;
+  left: 0;
+  padding-right: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #cfcdcb;
+  opacity: 0;
+  transform: translateY(90%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated-card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-card h2 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.animated-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.animated-card a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+.animated-card .word-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.animated-card:hover .word-overlay {
+  opacity: 0;
+}
+
+.first-division .division:nth-child(odd) {
+  background-color: #FF5733; /* Orange */
+}
+
+.first-division .division:nth-child(even) {
+  background-color: #33FFC2; /* Light Blue */
+}
+
+/* Second Division Styles */
+.second-division {
+    height: 142vh;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+  }
+
+.second-division .division {
+height: 100%;
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.second-division .division:nth-child(odd) {
+  background-color: #334CFF; /* Blue */
+}
+
+.second-division .division:nth-child(even) {
+  background-color: #FF3366; /* Pink */
+}
+
+.third-division {
+  display: flex;
+  height: 50vh;
+}
+
+.third-division .division {
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.third-division .division:nth-child(odd) {
+  background-color: #33ff77; /* Blue */
+}
+
+.third-division .division:nth-child(even) {
+  background-color: #FF3366; /* Pink */
+}
+
+/* Footer Styles */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+}
